@@ -9,7 +9,7 @@ public class login {
     public static final String COMMAND_REGISTER ="RegisterBut" ;
     public static final String COMMAND_LOGIN2 ="LoginBut2" ;
     public static JFrame frame=new JFrame("登陆页面");
-    public static JLabel label1=new JLabel("用户名");
+    public static JLabel label1=new JLabel("学 号");
     public static JTextField username=new JTextField(20);
     public static JLabel label2=new JLabel("密 码");
     public static JPasswordField password=new JPasswordField(20);

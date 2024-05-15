@@ -7,7 +7,7 @@ public class StudentHome {
     public static JFrame frame = new JFrame("学生主页");
 
 
-    public StudentHome(String username, String lastExamScore) {
+    public StudentHome(String username, String id) {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 300);
         frame.setLocationRelativeTo(null);
@@ -18,7 +18,7 @@ public class StudentHome {
         JLabel usernameLabel = new JLabel("用户名: " + username);
         personalInfoPanel.add(usernameLabel);
 
-        JLabel lastExamScoreLabel = new JLabel("上次考试成绩: " + lastExamScore);
+        JLabel lastExamScoreLabel = new JLabel("学号: " + id);
         personalInfoPanel.add(lastExamScoreLabel);
 
 
