@@ -41,7 +41,7 @@ public class EditTiku {
 
 
     public EditTiku(){
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setSize(1000, 600);
         frame.setLocationRelativeTo(null);
 
@@ -50,7 +50,7 @@ public class EditTiku {
         EditPanel.add(EditID);
         EditPanel.add(new JLabel("题目"));
         EditPanel.add(EditQuestion);
-        EditPanel.add(new JLabel("答案"));
+        EditPanel.add(new JLabel("答案选项"));
         EditPanel.add(EditAnswer);
         EditPanel.add(new JLabel("选项A"));
         EditPanel.add(EditOptionA);
@@ -77,7 +77,7 @@ public class EditTiku {
         AddPanel.setLayout(new GridLayout(13,1));
         AddPanel.add(new JLabel("题目"));
         AddPanel.add(AddQuestion);
-        AddPanel.add(new JLabel("答案"));
+        AddPanel.add(new JLabel("答案选项"));
         AddPanel.add(AddAnswer);
         AddPanel.add(new JLabel("选项A"));
         AddPanel.add(AddOptionA);
@@ -258,7 +258,7 @@ public class EditTiku {
             String sql = "select * from tiku";
             ResultSet rs = stmt.executeQuery(sql);
             tiku.setText("");
-            tiku.append("题目ID\t题目\t答案\t选项A\t选项B\t选项C\t选项D\n");
+            tiku.append("题目ID\t题目\t答案选项\t选项A\t选项B\t选项C\t选项D\n");
             while (rs.next()){
                 tiku.append(rs.getString("tid") + "\t" + rs.getString("title") + "\t" + rs.getString("answer") + "\t" + rs.getString("A") + "\t" + rs.getString("B") + "\t" + rs.getString("C") + "\t" + rs.getString("D") + "\n");
             }
@@ -272,8 +272,5 @@ public class EditTiku {
 
     }
 
-    public static void main(String[] args) {
-        new EditTiku();
-    }
 
 }

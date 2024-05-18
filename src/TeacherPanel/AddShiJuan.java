@@ -263,9 +263,7 @@ public class AddShiJuan {
         }
     }
 
-    public static void main(String[] args) {
-        new AddShiJuan();
-    }
+
 
 
 }

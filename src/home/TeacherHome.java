@@ -1,5 +1,7 @@
 package home;
 
+import TeacherPanel.*;
+
 import javax.swing.*;
 
 public class TeacherHome {
@@ -24,15 +26,27 @@ public class TeacherHome {
 
         JButton StudentInfo = new JButton("查看学生信息");
         buttonsPanel.add(StudentInfo);
+        StudentInfo.addActionListener(e -> {
+            new FindStudent();
+        });
 
         JButton AddShiJuan = new JButton("制作试卷");
         buttonsPanel.add(AddShiJuan);
+        AddShiJuan.addActionListener(e -> {
+            new AddShiJuan();
+        });
 
         JButton EditQuestions = new JButton("编辑题库");
         buttonsPanel.add(EditQuestions);
+        EditQuestions.addActionListener(e -> {
+            new EditTiku();
+        });
 
         JButton AddStudent = new JButton("添加学生");
         buttonsPanel.add(AddStudent);
+        AddStudent.addActionListener(e -> {
+            new AddStudent();
+        });
 
 
 

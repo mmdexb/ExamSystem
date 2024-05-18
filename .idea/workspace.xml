@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5aebdddd-8563-4416-ada6-1ad3f629cbbd" name="更改" comment="新增添加学生 编辑题库 添加试卷功能">
+      <change afterPath="$PROJECT_DIR$/src/StudentPanel/HistoryScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StudentPanel/LianXi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StudentPanel/历史成绩.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StudentPanel/练习.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TeacherPanel/FindStudent.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TeacherPanel/FindStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TeacherPanel/AddShiJuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TeacherPanel/AddShiJuan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TeacherPanel/EditTiku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TeacherPanel/EditTiku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/StudentHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/StudentHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/TeacherHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/TeacherHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pojo/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pojo/Question.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +60,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.LianXi.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -62,11 +74,14 @@
     "project.structure.last.edited": "库",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "通义灵码",
     "vue.rearranger.settings.migration": "true",
     "应用程序.AddShiJuan.executor": "Run",
     "应用程序.AddStudent.executor": "Run",
     "应用程序.EditTiku.executor": "Run",
+    "应用程序.FindStudent.executor": "Run",
+    "应用程序.HistoryScore.executor": "Run",
+    "应用程序.LianXi.executor": "Run",
     "应用程序.StudentHome.executor": "Run",
     "应用程序.login.executor": "Run",
     "应用程序.login.login.executor": "Run"
@@ -80,39 +95,39 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="应用程序.AddShiJuan">
-    <configuration name="AddShiJuan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TeacherPanel.AddShiJuan" />
-      <module name="ExamSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TeacherPanel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TeacherPanel.AddStudent" />
-      <module name="ExamSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TeacherPanel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.login.login">
     <configuration name="EditTiku" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TeacherPanel.EditTiku" />
       <module name="ExamSystem" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="TeacherPanel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TeacherPanel.FindStudent" />
+      <module name="ExamSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TeacherPanel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LianXi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StudentPanel.LianXi" />
+      <module name="ExamSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StudentPanel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.AddShiJuan" />
-        <item itemvalue="应用程序.AddStudent" />
-        <item itemvalue="应用程序.EditTiku" />
         <item itemvalue="应用程序.login.login" />
+        <item itemvalue="应用程序.LianXi" />
         <item itemvalue="应用程序.login" />
+        <item itemvalue="应用程序.FindStudent" />
+        <item itemvalue="应用程序.EditTiku" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +200,12 @@
       <workItem from="1715771780615" duration="7967000" />
       <workItem from="1715846477338" duration="7913000" />
       <workItem from="1715863638708" duration="7290000" />
+      <workItem from="1715913394963" duration="9904000" />
+      <workItem from="1715951563285" duration="1108000" />
+      <workItem from="1715959221493" duration="4071000" />
+      <workItem from="1716010225472" duration="732000" />
+      <workItem from="1716032025584" duration="4025000" />
+      <workItem from="1716042055345" duration="3278000" />
     </task>
     <task id="LOCAL-00001" summary="添加登陆页面 注册页面 学生主页 学生类 成绩历史类">
       <option name="closed" value="true" />
@@ -219,5 +240,9 @@
         <breakpoint enabled="true" type="java-exception" />
       </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

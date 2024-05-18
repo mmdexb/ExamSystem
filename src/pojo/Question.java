@@ -28,6 +28,10 @@ public class Question {
         this.answer = answer;
     }
 
+    public Question() {
+
+    }
+
     public Integer getTid() {
         return tid;
     }
